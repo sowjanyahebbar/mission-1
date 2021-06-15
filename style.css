@@ -110,6 +110,36 @@ body{
         justify-content: space-between;
         gap: 10px;
     }
+    .explore__menu__container{
+        position: relative;
+    }
+    .explore__menu__gradient__bg{
+        position: absolute;
+        left: 0;
+        top: 0;
+        height: 100%;
+        width: 100%;
+
+        background-image: linear-gradient(
+        to right,
+        #ff512f 0%,
+        #dd2476 51%,
+        #ff512f 100%
+    );
+    z-index: -3; 
+    transform: skewY(-5deg);/*for rhombus shape*/
+
+    }
+
+    .explore__menu__lists{
+        margin-top: 50px;
+        display: flex;
+        gap: 8px;
+    }
+    #pizza__card{
+        margin-top: -20px;
+        margin-bottom: 40px;
+    }
 }
 
 @media (min-width: 1020px) {
@@ -119,6 +149,14 @@ body{
     
     .hero__text{
         font-size: 40px;
+    }
+    .explore__menu__lists{
+        gap: 20px;
+        padding: 0 20px;
+    }
+    
+    .explore__menu__text{
+        font-size: 50px;
     }
     
 }
